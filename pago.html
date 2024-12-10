@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icono-removebg-preview.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar Producto</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Ferretería El Tornillo</div>
+    </header>
+
+    <section class="pago">
+        <h1>Proceso de Pago</h1>
+        <p>Complete los detalles para realizar su compra.</p>
+
+        <form id="formPago" onsubmit="mostrarMensajePago(event)">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+
+            <label for="fecha">Fecha de Expiración:</label>
+            <input type="month" id="fecha" name="fecha" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" required>
+
+            <button type="submit">Pagar</button>
+        </form>
+
+ 
+        <div id="mensajePago" style="display: none; color: green; font-size: 1.5rem; margin-top: 20px;">
+            ¡Pago realizado con éxito! Gracias por su compra.
+        </div>
+    </section>
+
+    <script>
+        function mostrarMensajePago(event) {
+         
+            event.preventDefault();
+
+         
+            document.getElementById("mensajePago").style.display = "block";
+
+ 
+            document.getElementById("formPago").style.display = "none";
+        }
+    </script>
+</body>
+</html>

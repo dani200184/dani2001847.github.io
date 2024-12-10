@@ -1,0 +1,65 @@
+
+
+
+
+#mensajePago {
+    color: green;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+
+
+.pago {
+
+    background-image: url(pexels-jplenio-1103970.jpg) ;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.pago h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.pago form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pago label {
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+}
+
+.pago input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pago button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pago button:hover {
+    background-color: #000000;
+}
